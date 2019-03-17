@@ -516,7 +516,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-#intro h1 span {
+#intro h1 span, #intro p span {
   color: #f82249;
 }
 
@@ -692,6 +692,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+#about .col-lg-3 h3, #about .col-lg-3 p {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -1102,6 +1106,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.4s ease-in-out;
 }
 
+#sponsors h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#sponsors p i {
+  color: #f82249;
+  font-size: 40px;
+}
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
@@ -1151,6 +1165,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
+}
+
+#faq h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#faq p i {
+  color: #f82249;
+  font-size: 40px;
 }
 
 /*--------------------------------------------------------------
