@@ -137,7 +137,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -516,8 +516,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-#intro h1 span, #intro p span {
-  /* color: #f82249; */
+/* #intro h1 span, #intro p span {
+  color: #f82249;
+} */
+#intro h1 .future {
+  color: #f82249;
+  font-size: 34px;
 }
 
 #intro p {
@@ -1074,8 +1078,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #sponsors .sponsors-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
+  /* border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa; */
   margin-bottom: 30px;
 }
 
@@ -1090,9 +1094,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
-  overflow: hidden;
+  /* border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa; */
+  /* overflow: hidden; */
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
 }
@@ -1109,6 +1113,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #sponsors h3 {
   text-align: center;
   margin: 0;
+}
+
+#sponsors h4 {
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
 #sponsors p i {
