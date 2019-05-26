@@ -519,9 +519,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* #intro h1 span, #intro p span {
   color: #f82249;
 } */
-#intro h1 .future {
+#intro h1 .future, #intro p span {
   color: #f82249;
-  font-size: 34px;
 }
 
 #intro p {
