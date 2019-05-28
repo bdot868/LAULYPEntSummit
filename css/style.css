@@ -1684,11 +1684,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #intro h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   #sponsors p i, #faq p i {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }
 
