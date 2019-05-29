@@ -519,8 +519,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* #intro h1 span, #intro p span {
   color: #f82249;
 } */
-#intro h1 .future, #intro p span {
+#intro h1 .future {
   color: #f82249;
+  /* font-size: 42px; */
+  text-transform: none;
+  font-size: 48px;
+}
+
+#intro p .evolve {
+  font-weight: 500;
+  font-size: 18px;
+  font-style: italic;
 }
 
 #intro p {
@@ -804,6 +813,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #schedule {
   padding: 60px 0 60px 0;
+  background: #f6f7fd;
 }
 
 #schedule .nav-tabs {
