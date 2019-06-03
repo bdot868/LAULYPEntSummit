@@ -1114,6 +1114,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 125px;
 }
 
+#sponsors .pm img {
+  height: 225px;
+}
+
 #sponsors .sponsor-logo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -1137,6 +1141,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #sponsors p i {
   color: #f82249;
   font-size: 2rem;
+}
+
+#sponsors .community .sponsor-logo {
+  margin-top: 50px;
 }
 
 /*--------------------------------------------------------------
