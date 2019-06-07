@@ -526,6 +526,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 56px;
 }
 
+#intro .line-break {
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-left: auto;
+    margin-right: auto;
+    height: 0px;
+    background-color: #fff;
+}
+
 #intro p .evolve {
   font-weight: 500;
   font-size: 18px;
@@ -1083,7 +1095,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #sponsors {
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
 #sponsors .sponsors-wrap {
@@ -1108,6 +1120,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* overflow: hidden; */
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
+}
+
+#sponsors .sponsor-logo img {
+  max-width: 85%;
+}
+
+#sponsors .outter-logos {
+  padding: 0;
 }
 
 #sponsors .small-logo img {
@@ -1137,6 +1157,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 50px;
   text-align: center;
 }
+#sponsors .small-partners h4 {
+  margin-bottom: 0;
+}
 
 #sponsors p i {
   color: #f82249;
@@ -1145,6 +1168,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sponsors .community .sponsor-logo {
   margin-top: 50px;
+}
+
+#sponsors .produced-by {
+  margin: auto;
+}
+
+#sponsors .produced-by .produced-logo {
+  display: inline-block;
+}
+
+#sponsors .section-header p {
+  color: #0e1b4d;
+  font-size: 18px;
+}
+
+#sponsors p span {
+  color: #f82249;
+  font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -1201,11 +1242,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 #faq h3 {
   text-align: center;
   margin: 0;
+  font-size: 24px;
 }
 
-#faq p i {
+#faq .section-header p {
+  color: #0e1b4d;
+  font-size: 20px;
+}
+
+#faq p span {
   color: #f82249;
-  font-size: 2rem;
+  font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -1590,6 +1637,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+/*--------------------------------------------------------------
+# Modal Styles
+--------------------------------------------------------------*/
+
+.modal .modal-body .partner-logo {
+  text-align: center;
+}
+
+.modal .modal-body .partner-logo img {
+  max-width: 50%;
+}
+
+.modal .partner-link {
+  margin: auto;
 }
 
 /*--------------------------------------------------------------
