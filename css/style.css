@@ -1805,7 +1805,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #sponsors .sponsors-wrap {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 
   #sponsors .community {
@@ -1840,6 +1840,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #sponsors .produced-by {
     text-align: center;
+  }
+  #sponsors .produced-by .produced-logo {
+    width: 100%;
+  }
+  #sponsors .small-logo img {
+    max-width: 100%;
   }
 }
 
