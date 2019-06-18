@@ -535,7 +535,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: auto;
     margin-right: auto;
     height: 0px;
-    background-color: #fff;
+    background-color: #f82249;
 }
 
 #intro p .evolve {
@@ -695,6 +695,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   left: 0;
   right: 0;
+}
+
+#about .about-text {
+  text-align: center;
+  z-index: 1;
 }
 
 #about h2 {
@@ -1126,6 +1131,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 85%;
 }
 
+#sponsors .sponsor-logo img:hover {
+  cursor: pointer;
+}
+
 #sponsors .outter-logos {
   padding: 0;
 }
@@ -1180,7 +1189,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sponsors .section-header p {
   color: #0e1b4d;
-  font-size: 18px;
+  font-size: 16px;
+  text-transform: none;
 }
 
 #sponsors p span {
@@ -1247,7 +1257,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq .section-header p {
   color: #0e1b4d;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
 }
 
 #faq p span {
@@ -1655,6 +1666,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: auto;
 }
 
+.modal-body {
+  padding: 1.2rem;
+}
+
+.modal .modal-body p {
+  text-align: justify;
+}
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1762,6 +1781,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
+#sponsors .sponsor-logo {
+  padding: 0;
+}
+
 }
 
 @media (max-width: 574px) {
@@ -1803,6 +1826,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #sponsors p i, #faq p i {
     font-size: 1.35rem;
+  }
+
+  #sponsors .sponsor-logo {
+    padding: 15px;
   }
 }
 
