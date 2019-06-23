@@ -990,66 +990,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Hotels Section
---------------------------------------------------------------*/
-
-#hotels {
-  padding: 60px 0;
-}
-
-#hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
-  margin-bottom: 30px;
-}
-
-#hotels .hotel:hover .hotel-img img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#hotels .hotel-img {
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-#hotels .hotel-img img {
-  transition: 0.3s ease-in-out;
-}
-
-#hotels h3 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 5px;
-  padding: 0 20px;
-}
-
-#hotels a {
-  color: #152b79;
-}
-
-#hotels a:hover {
-  color: #f82249;
-}
-
-#hotels .stars {
-  padding: 0 20px;
-  margin-bottom: 5px;
-}
-
-#hotels .stars i {
-  color: #ffc31d;
-}
-
-#hotels p {
-  padding: 0 20px;
-  margin-bottom: 20px;
-  color: #060c22;
-  font-style: italic;
-  font-size: 15px;
-}
-
-/*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
 
@@ -1135,12 +1075,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
+#sponsors .small-logo img {
+  max-width: 100%;
+}
+
 #sponsors .outter-logos {
   padding: 0;
 }
 
 #sponsors .small-logo img {
-  height: 125px;
+  height: 100px;
 }
 
 #sponsors .pm img {
@@ -1324,7 +1268,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Buy Tickets Section
 --------------------------------------------------------------*/
 
-#buy-tickets {
+/* #buy-tickets {
   padding: 60px 0;
 }
 
@@ -1394,111 +1338,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #buy-tickets #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
-}
+} */
 
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-
-#contact {
-  padding: 60px 0;
-}
-
-#contact .contact-info {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #f82249;
-}
-
-#contact .contact-info address,
-#contact .contact-info p {
-  margin-bottom: 0;
-  color: #112363;
-}
-
-#contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #112363;
-}
-
-#contact .contact-info a {
-  color: #4869df;
-}
-
-#contact .contact-info a:hover {
-  color: #f82249;
-}
-
-#contact .contact-address,
-#contact .contact-phone,
-#contact .contact-email {
-  margin-bottom: 20px;
-}
-
-#contact .form #sendmessage {
-  color: #f82249;
-  border: 1px solid #f82249;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #sendmessage.show,
-#contact .form #errormessage.show,
-#contact .form .show {
-  display: block;
-}
-
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#contact .form input,
-#contact .form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
-}
-
-#contact .form button[type="submit"] {
-  background: #f82249;
-  border: 0;
-  padding: 10px 40px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-#contact .form button[type="submit"]:hover {
-  background: #e0072f;
-}
 
 /*--------------------------------------------------------------
 # Footer
