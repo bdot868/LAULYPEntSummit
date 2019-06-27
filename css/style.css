@@ -157,7 +157,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: rgba(0, 206, 209, 0.98);
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -265,7 +265,7 @@ h6 {
   padding: 8px;
   text-decoration: none;
   display: inline-block;
-  color: rgba(202, 206, 221, 0.8);
+  color: #000;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -274,7 +274,7 @@ h6 {
 
 .nav-menu .menu-active a,
 .nav-menu a:hover {
-  color: #fff;
+  color: #000;
 }
 
 .nav-menu > li {
@@ -372,7 +372,7 @@ h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: #000;
 }
 
 /* Mobile Nav Styling */
@@ -477,7 +477,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  /* background: rgba(6, 12, 34, 0.8); */
+  background: rgba(255, 255, 255, 0.65);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -509,7 +510,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 {
-  color: #fff;
+  color: #000;
   font-family: "Raleway", sans-serif;
   font-size: 34px;
   font-weight: 600;
@@ -545,7 +546,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro p {
-  color: #ebebeb;
+  color: #000;
   font-weight: 700;
   font-size: 20px;
 }
@@ -626,7 +627,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro .about-btn {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
@@ -635,6 +636,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
+  background: #f82249;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
@@ -642,8 +644,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .about-btn:hover {
-  background: #f82249;
-  color: #fff;
+  background: none;
+  color: #f82249;
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -679,7 +681,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: orange;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -689,7 +691,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  /* background: rgba(13, 20, 41, 0.8); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -850,13 +852,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #0e1b4d;
+  background-color: #000;
   color: #fff;
   padding: 10px 100px;
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: lightseagreen;
   color: #fff;
 }
 
@@ -1040,7 +1042,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #sponsors {
-  /* padding: 60px 0; */
+  padding-top: 60px;
 }
 
 #sponsors .sponsors-wrap {
@@ -1085,6 +1087,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sponsors .small-logo img {
   height: 100px;
+}
+
+#sponsors .small-logo img:hover {
+  cursor: default;
 }
 
 #sponsors .pm img {
@@ -1142,11 +1148,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
 }
 
+#sponsors hr {
+  background: #f82249;
+  margin-bottom: 3rem;
+}
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
 
 #faq {
+  background: yellow;
   padding: 60px 0;
 }
 
@@ -1210,12 +1222,92 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
 }
 
+#faq .section-header {
+  margin-bottom: 0;
+}
+
+#faq .section-header::before {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+# Volunteer Section
+--------------------------------------------------------------*/
+
+#volunteer {
+  padding: 60px 0;
+}
+
+#volunteer #volunteer-list {
+  padding: 0;
+  list-style: none;
+}
+
+#volunteer #volunteer-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+#volunteer #volunteer-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+#volunteer #volunteer-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+#volunteer #volunteer-list p {
+  margin-bottom: 20px;
+}
+
+#volunteer #volunteer-list a.collapse {
+  color: #f82249;
+}
+
+#volunteer #volunteer-list a.collapsed {
+  color: #000;
+}
+
+#volunteer #volunteer-list a.collapsed i::before {
+  content: "\f055" !important;
+}
+
+#volunteer h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+#volunteer .section-header p {
+  color: #0e1b4d;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+#volunteer p span {
+  color: #f82249;
+  font-style: italic;
+}
+
+#volunteer .section-header {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Subscribe Section
 --------------------------------------------------------------*/
 
 #subscribe {
-  padding: 60px;
+  padding: 100px;
   background: url(../img/subscribe-bg.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -1268,7 +1360,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Buy Tickets Section
 --------------------------------------------------------------*/
 
-/* #buy-tickets {
+#buy-tickets {
   padding: 60px 0;
 }
 
@@ -1338,7 +1430,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #buy-tickets #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
-} */
+}
+
+#buy-tickets .mute {
+  color: #fff;
+}
 
 
 /*--------------------------------------------------------------
@@ -1346,7 +1442,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #footer {
-  background: #101522;
+  background: rgba(0, 206, 209, 0.98);
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
@@ -1483,6 +1579,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+  color: #000;
 }
 
 #footer .credits {
@@ -1570,7 +1667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 991px) {
   #header {
-    background: rgba(6, 12, 34, 0.98);
+    /* background: rgba(6, 12, 34, 0.98); */
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
