@@ -975,11 +975,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
+  text-align: center;
 }
 
-#masterclass .schedule-item:hover {
+/* #masterclass .schedule-item:hover {
   background-color: ghostwhite;
-}
+} */
 
 #masterclass .schedule-item time {
   padding-bottom: 5px;
@@ -992,7 +993,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* overflow: hidden; */
   /* border-radius: 50%; */
   /* float: left; */
-  margin: 0 10px 20px 0;
+  margin: 30px auto;
 }
 
 #masterclass .schedule-item .speaker img {
@@ -1008,18 +1009,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
+  color: #ffffff;
 }
 
 #masterclass .schedule-item h4 span {
   font-style: italic;
-  color: #19328e;
+  color: #ffffff;
   font-weight: normal;
   font-size: 16px;
 }
 
 #masterclass .schedule-item p {
   font-style: italic;
-  color: #152b79;
+  color: #ffffff;
   margin-bottom: 0;
 }
 
