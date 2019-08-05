@@ -732,7 +732,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
-/*
+
 #speakers {
   padding: 60px 0 30px 0;
 }
@@ -824,7 +824,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #112363;
   font-size: 15px;
   margin-bottom: 10px;
-} */
+}
 
 /*--------------------------------------------------------------
 # Schedule Section
@@ -890,12 +890,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker {
-  width: 80px;
+  width: 60px;
   height: 60px;
   /* overflow: hidden; */
   /* border-radius: 50%; */
   float: left;
-  margin: 0 10px 10px 0;
+  margin: 0 10px 20px 0;
 }
 
 #schedule .schedule-item .speaker img {
@@ -927,7 +927,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker-name {
-  font-size: .75rem;
+  font-size: .73rem;
   font-style: normal;
   text-align: center;
 }
@@ -965,6 +965,70 @@ body.mobile-nav-active #mobile-nav-toggle {
 #masterclass .section-header::before {
   display: none;
 }
+
+#masterclass .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#masterclass .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#masterclass .schedule-item:hover {
+  background-color: ghostwhite;
+}
+
+#masterclass .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#masterclass .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  /* overflow: hidden; */
+  /* border-radius: 50%; */
+  /* float: left; */
+  margin: 0 10px 20px 0;
+}
+
+#masterclass .schedule-item .speaker img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+  border-radius: 50%;
+}
+
+#masterclass .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#masterclass .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#masterclass .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+#masterclass .schedule-item .speaker-name {
+  font-size: .73rem;
+  font-style: normal;
+  text-align: center;
+}
+
 
 /*--------------------------------------------------------------
 # Venue Section
@@ -1176,6 +1240,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sponsors .produced-by .produced-logo {
   display: inline-block;
+}
+
+#sponsors .produced-by .produced-logo .small-logo a img {
+  cursor: pointer;
 }
 
 #sponsors .section-header p {
