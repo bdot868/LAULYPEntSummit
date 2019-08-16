@@ -890,8 +890,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   /* overflow: hidden; */
   /* border-radius: 50%; */
   float: left;
@@ -905,6 +905,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 50%;
   transition: all ease-in-out 0.3s;
   border-radius: 50%;
+}
+
+#schedule .schedule-item .speaker .trell {
+  width: 100%;
 }
 
 #schedule .schedule-item h4 {
@@ -988,8 +992,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #masterclass .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   /* overflow: hidden; */
   /* border-radius: 50%; */
   /* float: left; */
@@ -1026,7 +1030,103 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #masterclass .schedule-item .speaker-name {
-  font-size: .73rem;
+  font-style: normal;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Townhall Section
+--------------------------------------------------------------*/
+
+#townhall {
+  background: navy;
+  padding: 60px 0;
+}
+
+#townhall h2 {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+#townhall .section-header p {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+#townhall h2 span {
+  font-style: italic;
+}
+
+#townhall .section-header {
+  margin-bottom: 0;
+}
+
+#townhall .section-header::before {
+  display: none;
+}
+
+#townhall .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#townhall .schedule-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+  text-align: center;
+}
+
+/* #masterclass .schedule-item:hover {
+  background-color: ghostwhite;
+} */
+
+#townhall .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#townhall .schedule-item .speaker {
+  width: 150px;
+  height: 150px;
+  /* overflow: hidden; */
+  /* border-radius: 50%; */
+  float: left;
+  margin: 30px;
+}
+
+#townhall .schedule-item .speaker img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+  border-radius: 50%;
+}
+
+#townhall .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+#townhall .schedule-item h4 span {
+  font-style: italic;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#townhall .schedule-item p {
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+#townhall .schedule-item .speaker-name {
+  margin-top: 8px
   font-style: normal;
   text-align: center;
 }
@@ -1522,6 +1622,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #buy-tickets .card .btn:hover {
   background-color: #e0072f;
+}
+
+#buy-tickets .card .members {
+  visibility: hidden;
 }
 
 #buy-tickets #buy-ticket-modal input,
