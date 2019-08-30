@@ -1432,6 +1432,73 @@ body.mobile-nav-active #mobile-nav-toggle {
 #career .section-header::before {
   display: none;
 }
+#career .sponsor-logo {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa; */
+  /* overflow: hidden; */
+  /* background: rgba(255, 255, 255, 0.5); */
+  height: 160px;
+}
+
+#career .sponsor-logo img {
+  max-width: 85%;
+}
+
+#career .sponsor-logo img:hover {
+  cursor: pointer;
+}
+
+#career .small-logo img {
+  max-width: 100%;
+}
+
+#career .outter-logos {
+  padding: 0;
+}
+
+#career .small-logo img {
+  height: 100px;
+}
+
+#career .small-logo img:hover {
+  cursor: default;
+}
+
+#career .pm img {
+  height: 225px;
+}
+
+#career .sponsor-logo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#career img {
+  transition: all 0.4s ease-in-out;
+}
+
+#career .produced-by {
+  margin: auto;
+}
+
+#career .produced-by .produced-logo {
+  display: inline-block;
+}
+
+#career .produced-by .produced-logo .small-logo a img {
+  cursor: pointer;
+}
+
 
 /*--------------------------------------------------------------
 # F.A.Q Section
@@ -1992,7 +2059,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 768px) {
-  #sponsors .sponsor-logo {
+  #sponsors .sponsor-logo, #career .sponsor-logo {
     height: auto;
   }
   .back-to-top {
@@ -2012,7 +2079,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
-#sponsors .sponsor-logo {
+#sponsors .sponsor-logo, #career .sponsor-logo {
   padding: 0;
 }
 
@@ -2059,7 +2126,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 1.35rem;
   }
 
-  #sponsors .sponsor-logo {
+  #sponsors .sponsor-logo, #career .sponsor-logo {
     padding: 15px;
   }
 }
@@ -2069,13 +2136,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 30px;
   }
 
-  #sponsors .produced-by {
+  #sponsors .produced-by, #career .produced-by {
     text-align: center;
   }
-  #sponsors .produced-by .produced-logo {
+  #sponsors .produced-by .produced-logo, #career .produced-by .produced-logo {
     width: 100%;
   }
-  #sponsors .small-logo img {
+  #sponsors .small-logo img, #career .small-logo img {
     max-width: 100%;
   }
 }
