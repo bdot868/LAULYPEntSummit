@@ -1277,12 +1277,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa; */
   /* overflow: hidden; */
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
   height: 160px;
+}
+
+#sponsors .sponsor-logo.no-pad {
+  padding: 0;
 }
 
 #sponsors .sponsor-logo img {
   max-width: 85%;
+}
+
+#sponsors .sponsor-logo.no-pad img {
+  max-width: 100%;
 }
 
 #sponsors .sponsor-logo img:hover {
@@ -1431,6 +1439,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #career .section-header::before {
   display: none;
+}
+
+#career .schedule-item {
+  background: #ffffff;
+  margin-top: 20px;
 }
 #career .sponsor-logo {
   padding: 30px;
