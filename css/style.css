@@ -890,12 +890,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker {
-  width: 100px;
+  width: 120px;
   height: 100px;
   /* overflow: hidden; */
   /* border-radius: 50%; */
   float: left;
-  margin: 0 10px 20px 0;
+  margin: 10px 10px 80px 0;
 }
 
 #schedule .schedule-item .speaker img {
@@ -907,8 +907,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
 }
 
-#schedule .schedule-item .speaker .trell {
-  width: 100%;
+#schedule .schedule-item .speaker .small-img {
+  width: 85%;
 }
 
 #schedule .schedule-item h4 {
@@ -936,6 +936,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
+#schedule .schedule-item .speaker-title {
+  font-size: .73rem;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+#day-2 .speaker {
+  margin: auto;
+}
 
 /*--------------------------------------------------------------
 # Masterclass Section
@@ -943,7 +952,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #masterclass {
   background: #f82249;
-  padding: 60px 0;
+  padding: 60px 0 0 0;
 }
 
 #masterclass h2 {
@@ -1009,6 +1018,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
 }
 
+#masterclass .schedule-item .speaker .sundance {
+  border-radius: 0;
+}
+
 #masterclass .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
@@ -1032,6 +1045,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 #masterclass .schedule-item .speaker-name {
   font-style: normal;
   text-align: center;
+}
+
+#masterclass .apply {
+  margin: 30px auto;
+  padding: 8px 30px;
+  /* border: 2px solid #ffffff; */
+  border-radius: 45px;
+  background-color: navy;
+  color: #ffffff;
+  transition: all ease-in-out 0.3s;
+  font-weight: 600;
+}
+
+#masterclass .apply:hover {
+  background: #ffffff;
+  color: #f82249;
 }
 
 /*--------------------------------------------------------------
@@ -1306,7 +1335,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #sponsors .small-logo img {
-  height: 100px;
+  height: 87px;
 }
 
 #sponsors .small-logo img:hover {
@@ -1382,9 +1411,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #career {
-  background: #0e1b4d;
+  background: aliceblue;
   padding: 60px 0;
-  color: #ffffff;
+  color: #0e1b4d;
 }
 
 #career #faq-list {
@@ -1419,11 +1448,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #career h2 {
-  color: #ffffff;
+  color: #0e1b4d;
 }
 
 #career .section-header p {
-  color: #ffffff;
+  color: #0e1b4d;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
 }
@@ -1441,10 +1470,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: none;
 }
 
-#career .schedule-item {
+/* #career .schedule-item {
   background: #ffffff;
   margin-top: 20px;
-}
+} */
 #career .sponsor-logo {
   padding: 30px;
   display: -webkit-box;
@@ -1480,7 +1509,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #career .small-logo img {
-  height: 100px;
+  height: 75px;
 }
 
 #career .small-logo img:hover {
@@ -1512,13 +1541,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
+#career .btn {
+  padding: 8px 30px;
+  /* border: 2px solid #ffffff; */
+  border-radius: 45px;
+  background-color: #0e1b4d;
+  color: #ffffff;
+  transition: all ease-in-out 0.4s;
+  font-weight: 600;
+}
+
+#career .btn:hover {
+  /* color: #ffffff; */
+  background: none;
+  border: 2px solid #0e1b4d;
+  color: #0e1b4d;
+}
 
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
 
 #faq {
-  background: aliceblue;
+  background: #f82249;
   padding: 60px 0;
 }
 
@@ -1570,16 +1615,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
   font-size: 24px;
 }
+#faq .section-header h2 {
+  color: #ffffff;
+}
 
 #faq .section-header p {
-  color: #0e1b4d;
+  /* color: #0e1b4d; */
+  color: #ffffff;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
 }
 
-#faq p span {
-  color: #f82249;
-  font-style: italic;
+#faq .section-header a {
+  color: #0e1b4d;
+  /* font-style: italic; */
 }
 
 #faq .section-header {
@@ -1588,6 +1637,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq .section-header::before {
   display: none;
+}
+
+#faq .btn {
+  background: #ffffff;
+  padding: 7px 20px;
+  border-radius: 50px;
+  color: #0e1b4d;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+
+#faq .btn:hover {
+  background: #0e1b4d;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -1741,7 +1804,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #buy-tickets .card .card-title {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -1775,10 +1838,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: #0e1b4d;
+  color: #ffffff;
 }
 
-#buy-tickets .card .members {
+#buy-tickets .card .members, #buy-tickets .card .hide {
   visibility: hidden;
 }
 
