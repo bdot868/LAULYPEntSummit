@@ -469,7 +469,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/event1.jpg) top center;
+  background: url(../img/website-cover.png) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -898,6 +898,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 10px 10px 80px 0;
 }
 
+#schedule .schedule-item .trailer {
+  margin: 20px 10px 50px 0;
+}
+
 #schedule .schedule-item .speaker img {
   height: 100%;
   -webkit-transform: translateX(-50%);
@@ -944,6 +948,80 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #day-2 .speaker {
   margin: auto;
+}
+
+#schedule .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#schedule .play-btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#schedule .play-btn:before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(163, 163, 163, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#schedule .play-btn:hover::after {
+  border-left: 15px solid #f82249;
+  -webkit-transform: scale(20);
+  transform: scale(20);
+}
+
+#schedule .play-btn:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1121,12 +1199,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #townhall .schedule-item .speaker {
-  width: 120px;
+  width: 200px;
   height: 120px;
   /* overflow: hidden; */
   /* border-radius: 50%; */
   float: left;
-  margin: 30px;
+  margin: 40px;
 }
 
 #townhall .schedule-item .speaker img {
@@ -1163,6 +1241,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 8px
   font-style: normal;
   text-align: center;
+}
+
+#townhall .schedule-item .speaker-title {
+  font-weight: 600;
+  font-style: normal;
 }
 
 
