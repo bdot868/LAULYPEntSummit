@@ -1585,14 +1585,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #career .small-logo img {
   max-width: 100%;
+  height: 70px;
 }
 
 #career .outter-logos {
   padding: 0;
-}
-
-#career .small-logo img {
-  height: 75px;
 }
 
 #career .small-logo img:hover {
@@ -2294,6 +2291,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 480px) {
   #schedule .nav-tabs a {
     padding: 8px 30px;
+  }
+  #townhall .schedule-item .speaker {
+    display: inline-block;
+    float: none;
   }
 
   #sponsors .produced-by, #career .produced-by {
